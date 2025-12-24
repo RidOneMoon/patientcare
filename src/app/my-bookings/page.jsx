@@ -130,7 +130,6 @@ export default function MyBookingsPage() {
                   </div>
                 </div>
 
-                {/* 2. LIVE TRACKING BAR */}
                 <div className="w-full md:w-64">
                    <p className="text-[10px] font-black text-slate-400 uppercase mb-3 text-center md:text-left">Service Progress</p>
                    <div className="relative h-2 bg-slate-100 rounded-full overflow-hidden">

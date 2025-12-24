@@ -4,7 +4,6 @@ import { NextResponse } from "next/server";
 export async function POST(req) {
   const db = await connectToDatabase();
   const body = await req.json();
-  // Update or Insert user profile
   await db.collection("users").updateOne(
     { email: body.email },
     { $set: body },

@@ -1,12 +1,10 @@
 import { connectToDatabase } from "@/lib/mongodb";
 import { NextResponse } from "next/server";
 
-// GET: Fetch all bookings for the Admin Dashboard
 export async function GET() {
   try {
     const db = await connectToDatabase();
     
-    // Fetch all bookings, sorted by the most recent first
     const allBookings = await db.collection("bookings")
       .find({})
       .sort({ bookedAt: -1 })
@@ -22,7 +20,6 @@ export async function GET() {
   }
 }
 
-// PATCH: Update booking status 
 export async function PATCH(req) {
   try {
     const db = await connectToDatabase();

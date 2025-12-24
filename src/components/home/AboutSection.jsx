@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 
 const features = [
   {
@@ -26,21 +27,21 @@ export default function AboutSection() {
         <div className="flex flex-col lg:flex-row items-center gap-16">
           
           {/* Left Side Img */}
-          <div className="lg:w-1/2 relative">
-            <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl border-8 border-slate-50">
-              <img 
-                src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?q=80&w=2000&auto=format&fit=crop" 
-                alt="Caregiving Mission"
-                className="w-full h-[500px] object-cover"
-              />
-            </div>
-            {/*  Bg Ele */}
-            <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-blue-100 rounded-full mix-blend-multiply 
-            filter blur-3xl opacity-70 animate-blob"></div>
-            <div className="absolute -top-10 -right-10 w-64 h-64
-             bg-slate-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 
-             animate-blob animation-delay-2000"></div>
+
+        <div className="lg:w-1/2 relative">
+        <div className="relative z-10 rounded-[3rem] overflow-hidden shadow-2xl border-8 border-slate-50 h-[500px]">
+            <Image
+              src="/compassionate.jpeg"
+              alt="Caregiving Mission"
+              fill
+              priority
+              className="object-cover"
+            />
           </div>
+
+  <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob"></div>
+  <div className="absolute -top-10 -right-10 w-64 h-64 bg-slate-100 rounded-full mix-blend-multiply filter blur-3xl opacity-70 animate-blob animation-delay-2000"></div>
+</div>
 
           {/* RT Content */}
           <div className="lg:w-1/2">

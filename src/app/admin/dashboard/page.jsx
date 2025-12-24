@@ -7,7 +7,7 @@ export default function AdminDashboard() {
   const [isAdmin, setIsAdmin] = useState(false);
   const [bookings, setBookings] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [selectedBooking, setSelectedBooking] = useState(null); // Track which booking to view
+  const [selectedBooking, setSelectedBooking] = useState(null); 
   const router = useRouter();
 
   const [emailInput, setEmailInput] = useState("");

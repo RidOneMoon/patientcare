@@ -6,7 +6,6 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/solid"; // Import icons
 
-// The data for your slider
 const slides = [
   {
     image: "/baby.jpg",

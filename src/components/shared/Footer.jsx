@@ -25,7 +25,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h4 className="text-sm font-black uppercase tracking-widest text-slate-500 mb-6">Quick Links</h4>
             <ul className="space-y-4">
@@ -75,7 +74,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="pt-8 border-t border-slate-800/50 flex flex-col md:grid md:grid-cols-3 items-center gap-4">
           <p className="text-slate-500 text-[11px] font-bold uppercase tracking-widest text-center md:text-left">
-            Built with ❤️ in Dhaka
+            Built with Love in Dhaka
           </p>
           <p className="text-slate-400 text-sm font-medium text-center">
             © 2025 Reliable Care Services.

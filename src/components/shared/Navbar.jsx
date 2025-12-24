@@ -32,7 +32,6 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Navigation Links */}
         <div className="flex items-center gap-8">
           <div className="hidden md:flex items-center gap-6 text-sm font-bold text-slate-600">
             <Link href="/" className={`${pathname === '/' ? 'text-blue-600' : 'hover:text-blue-600'} transition-colors`}>

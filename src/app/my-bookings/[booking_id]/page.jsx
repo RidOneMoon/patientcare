@@ -59,7 +59,6 @@ export default function BookingDetailsView({ params }) {
 
         <div className="bg-white rounded-[1.5rem] border border-slate-200 shadow-xl overflow-hidden print:border-slate-100">
           
-          {/* Header - Reduced Padding */}
           <div className="p-6 flex justify-between items-center border-b border-dashed border-slate-200">
             <div>
               <h1 className="text-blue-600 font-black text-2xl tracking-tighter">CARE.XYZ</h1>
@@ -73,13 +72,11 @@ export default function BookingDetailsView({ params }) {
           </div>
 
           <div className="p-8">
-            {/* Service Title - Reduced Margin */}
             <div className="text-center mb-6">
               <p className="text-slate-400 text-[9px] font-black uppercase tracking-widest mb-1">Service Provided</p>
               <h2 className="text-2xl font-black text-slate-900 leading-tight">{booking.serviceTitle}</h2>
             </div>
 
-            {/* Price Highlight - More Compact */}
             <div className="flex justify-center mb-8">
               <div className="bg-blue-50 border border-blue-100 px-8 py-3 rounded-2xl text-center">
                 <p className="text-blue-400 text-[9px] font-black uppercase tracking-widest">Amount Paid</p>
@@ -103,18 +100,7 @@ export default function BookingDetailsView({ params }) {
             </div>
           </div>
 
-          {/* Footer Section  */}
-          <div className="p-6 bg-slate-50/50 border-t flex justify-between items-center">
-            <div>
-              <p className="text-[8px] font-black text-slate-400 uppercase tracking-widest">Generated On</p>
-              <p className="text-xs font-bold text-slate-900">{generatedDate}</p>
-            </div>
-            
-            <div className="text-right">
-              <p className="text-[8px] font-black text-slate-400 uppercase tracking-widest mb-1">System Ref</p>
-              <p className="text-[10px] font-mono font-bold text-slate-500">{booking._id}</p>
-            </div>
-          </div>
+         
         </div>
 
         {/* Action Btn */}
