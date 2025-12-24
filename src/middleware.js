@@ -26,3 +26,6 @@ export function middleware(request) {
 export const config = {
   matcher: ["/booking/:path*", "/my-bookings", "/login", "/register"],
 };
+
+
+
