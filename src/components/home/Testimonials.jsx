@@ -39,7 +39,7 @@ export default function Testimonials() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {reviews.map((review) => (
             <div 
-              key={review.id} 
+              key={review} 
               className="p-8 rounded-[2.5rem] bg-slate-50 border border-slate-100 flex flex-col justify-between hover:bg-white hover:shadow-xl hover:border-blue-100 transition-all duration-300"
             >
               <div>
