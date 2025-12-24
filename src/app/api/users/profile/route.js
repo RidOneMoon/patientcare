@@ -5,7 +5,7 @@ export async function POST(req) {
   const db = await connectToDatabase();
   const body = await req.json();
   await db.collection("users").updateOne(
-    { email: body },
+    { email: body.email },
     { $set: body },
     { upsert: true }
   );
