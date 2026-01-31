@@ -1,9 +1,9 @@
-import { connectToDatabase } from "@/lib/mongodb"; // Changed from connectDB
+import { connectToDatabase } from "@/lib/mongodb"; 
 import { NextResponse } from "next/server";
 
 export const GET = async () => {
   try {
-    const db = await connectToDatabase(); // Changed from connectDB()
+    const db = await connectToDatabase(); 
     const bookings = await db.collection("bookings")
       .find()
       .sort({ bookedAt: -1 })
